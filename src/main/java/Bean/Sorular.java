@@ -8,6 +8,15 @@ public class Sorular {
     String secenekler;
     String soruGovdesi;
 
+    public Sorular(int soru_id, String soru_tipi, int sorunun_sirasi, String kayitli_oldugu_form, String secenekler, String soruGovdesi) {
+        this.soru_id = soru_id;
+        this.soru_tipi = soru_tipi;
+        this.sorunun_sirasi = sorunun_sirasi;
+        this.kayitli_oldugu_form = kayitli_oldugu_form;
+        this.secenekler = secenekler;
+        this.soruGovdesi = soruGovdesi;
+    }
+
     public String getSoruGovdesi() {
         return soruGovdesi;
     }

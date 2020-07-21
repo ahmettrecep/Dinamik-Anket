@@ -3,7 +3,7 @@ package Bean;
 public class Cevaplar {
     int cevap_id;
     int cevaplayan_id;
-    int form_id;
+    String form_id;
     int soru_id;
     String cevap;
 
@@ -11,12 +11,17 @@ public class Cevaplar {
         this.cevap = cevap;
     }
 
-    public Cevaplar(int cevap_id, int cevaplayan_id, int form_id, int soru_id, String cevap) {
+
+    public Cevaplar(int cevap_id, int cevaplayan_id, String form_id, int soru_id, String cevap) {
         this.cevap_id = cevap_id;
         this.cevaplayan_id = cevaplayan_id;
         this.form_id = form_id;
         this.soru_id = soru_id;
         this.cevap = cevap;
+    }
+
+    public Cevaplar() {
+
     }
 
     public int getCevap_id() {
@@ -35,11 +40,11 @@ public class Cevaplar {
         this.cevaplayan_id = cevaplayan_id;
     }
 
-    public int getForm_id() {
+    public String getForm_id() {
         return form_id;
     }
 
-    public void setForm_id(int form_id) {
+    public void setForm_id(String form_id) {
         this.form_id = form_id;
     }
 

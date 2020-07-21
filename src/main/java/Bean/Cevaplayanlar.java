@@ -11,6 +11,10 @@ public class Cevaplayanlar {
         this.giris_tarihi = giris_tarihi;
     }
 
+    public Cevaplayanlar() {
+
+    }
+
     public int getCevaplayan_id() {
         return cevaplayan_id;
     }
